@@ -1,7 +1,7 @@
 export default class Airport {
   constructor(name, code) {
     this._name = typeof name === 'string' ? name : '';
-    this._code = typeof code === 'string' ? name : '';
+    this._code = typeof code === 'string' ? code : '';
   }
 
   get [Symbol.toStringTag]() {
