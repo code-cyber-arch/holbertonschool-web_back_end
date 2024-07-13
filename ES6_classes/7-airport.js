@@ -4,7 +4,7 @@ export default class Airport {
     this._code = typeof code === 'string' ? name : '';
   }
 
-  get [Symbol.toSrting]() {
+  get [Symbol.toStringTag]() {
     return `${this._code}`;
   }
 
