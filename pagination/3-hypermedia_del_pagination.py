@@ -43,7 +43,7 @@ class Server:
         """
         Return pagination
         """
-        assert type(index) == int and type(page_size) == int
+        assert (type(index) is int) and (type(page_size) is int)
         assert 0 <= index < len(self.dataset())
         dataset = self.indexed_dataset()
         data = []
