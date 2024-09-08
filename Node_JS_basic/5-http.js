@@ -30,7 +30,7 @@ const app = http.createServer(async (req, res) => {
 });
 
 app.listen(port, hostname, () => {
-  // Server is now running and listening for requests
+  //   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
 module.exports = app;
